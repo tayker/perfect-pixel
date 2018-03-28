@@ -1,0 +1,151 @@
+@media screen and (max-width: 960px){
+    .section{
+        padding: 0 20px;
+        &--details{
+            .content{
+                padding: 40px 0;
+            }
+        }
+        &--box-grid{
+            padding: 0 0 800px 0;
+            
+            .box-grid{
+                &__item{
+                    width: 50%;
+                    &--large{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &--options{
+            .content{
+                padding: 140px 0;
+            }
+        }
+        &--reasons{
+            .content{
+                padding: 20px 0 40px 0;
+            }
+        }
+        &--buying{
+            .content{
+                padding: 20px 0;
+            }
+        }
+        &--footer{
+            .content{
+                .column{
+                    &--footer-form{
+                        .footer-form{
+                            max-width: 300px;
+                            [type="email"]{
+                                max-width: 260px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 786px){
+    .section{
+        &--masthead{
+            .content{
+                .phone-picture{
+                    bottom: -40vh;
+                    width: 50%;
+                }
+            }
+        }
+        &--description{
+            .content{
+                .columns{
+                    flex-direction: column;
+                    &__item{
+                        width: 100%;
+                        
+                        &:nth-child(2){
+                            margin: 0;
+                            
+                            .text-description{
+                                &:first-child{
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--box-grid{
+            padding: 0;
+            .box-grid{
+                position: static;
+                max-width: 100%;
+                
+                &__item{
+                    width: 100%;
+                }
+            }
+        }
+        &--details{
+            .content{
+                .details{
+                    flex-wrap: wrap;
+                    &__item{
+                        width: 100%;
+                        &:nth-child(n){
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &--reasons{
+            .content{
+                .reasons{
+                    flex-wrap: wrap;
+                    &__item{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &--buying{
+            .content{
+                .buying{
+                    align-items: center;
+                    flex-direction: column;
+                    &__card{
+                    }
+                }
+            }
+        }
+        &--footer{
+            .content{
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0 40px 0;    
+                .column{
+                    width: 100%;
+                    
+                    &--footer-form{
+                        order: -1;
+                        .footer-form{
+                            max-width: 100%;
+                            
+                            [type="email"]{
+                                max-width: 390px;
+                            }
+                            .button{
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
